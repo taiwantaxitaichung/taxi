@@ -14,7 +14,7 @@ const FormAutoFill = new Vue({
     person: {},
 
     // Google Form 的 action URL
-    formAction: 'https://docs.google.com/spreadsheets/d/1-w7Eq5rKF1Xa1FYSCIM3JJqqSFOA6qtc8dLdW3YJwe0/edit?usp=sharing',
+    formAction: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdjqlBsYS1fm1fPim3-OTC7FC7IRyCIVBSY0I80QRcSu0F7SA/formResponse',
     
     // Google Form 各個 input 的 name
     input: {
