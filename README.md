@@ -1,4 +1,4 @@
-# Google表單，輸入ID後自動帶入其它欄位資料
+# Google表單，輸入隊編後自動帶入其它欄位資料
 
 Demo：[demo](https://letswritetw.github.io/letswrite-google-forms-id-data/)
 
