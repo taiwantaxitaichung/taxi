@@ -14,15 +14,15 @@ const FormAutoFill = new Vue({
     person: {},
 
     // Google Form 的 action URL
-    formAction: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeNBnd-yVJ7_-tMq5xaQrvt0j18UtabCFBTM0Eu2O3ivDecuQ/formResponse',
+    formAction: 'https://docs.google.com/spreadsheets/d/1-w7Eq5rKF1Xa1FYSCIM3JJqqSFOA6qtc8dLdW3YJwe0/edit?usp=sharing',
     
     // Google Form 各個 input 的 name
     input: {
-      id: 'entry.1815052017',
-      name: 'entry.1543576845',
-      gender: 'entry.892230025',
-      phone: 'entry.1003128242',
-      site: 'entry.260985931',
+      id: 'entry.143599827',
+      name: 'entry.34207673',
+      gender: 'entry.1164978269',
+      phone: 'entry.335294457',
+      site: 'entry.1644592734995',
       msg: 'entry.1782841550'
     },
 
@@ -30,10 +30,10 @@ const FormAutoFill = new Vue({
     loading: false
   },
   methods: {
-    // ID 限填 4 碼
+    // ID 限填 5 碼
     limitIdLen(val) {
-      if(val.length > 4) {
-        return this.id =  this.id.slice(0, 4);
+      if(val.length > 5) {
+        return this.id =  this.id.slice(0, 5);
       }
     },
     // 送出表單
@@ -53,8 +53,8 @@ const FormAutoFill = new Vue({
   },
   watch: {
     id: function(val) {
-      // ID 輸入到 4 碼就查詢資料
-      if(val.length === 4) {
+      // ID 輸入到 5 碼就查詢資料
+      if(val.length === 5) {
 
         // this.persons 裡沒這筆資料，才 POST
         if(this.persons[this.id] === undefined) {
