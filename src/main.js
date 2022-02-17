@@ -45,7 +45,7 @@
                         .concat(this.person.site, "&")
                         .concat(this.input.carType, "=")
                         .concat(this.person.carType);
-                    fetch(this.formAction + "?" + n, { method: "POST" })
+                    fetch(this.formAction + "?" + n, { method: "POST", credentials: "include" })
                         .catch((function (n) {
                             alert("提交成功。"),
                                 t.id = "",
