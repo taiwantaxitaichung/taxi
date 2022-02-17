@@ -44,7 +44,7 @@
                         .concat(this.input.site, "=")
                         .concat(this.person.site, "&")
                         .concat(this.input.carType, "=")
-                        .concat(this.person.carType || "");
+                        .concat(this.person.carType);
                     fetch(this.formAction + "?" + n, { method: "POST" })
                         .catch((function (n) {
                             alert("提交成功。"),
