@@ -4,7 +4,8 @@
         el: "#app",
         data: {
             gas: "https://script.google.com/macros/s/AKfycbxar9kWxhTU-PrWvKDdPQvEGBTlp3jqP4ogJ_WnBZoDrMHdqEGxY4BlAqd26kNvUZTRiw/exec",
-            id: "AKfycbxar9kWxhTU-PrWvKDdPQvEGBTlp3jqP4ogJ_WnBZoDrMHdqEGxY4BlAqd26kNvUZTRiw",
+            //id: "AKfycbxar9kWxhTU-PrWvKDdPQvEGBTlp3jqP4ogJ_WnBZoDrMHdqEGxY4BlAqd26kNvUZTRiw",
+            id: "1nqfxp8go8VwSElfGb4nTqRbJwX3PLBvikgdnNCeWV-o0B2Q69Ra03Tyd",
             persons: {},
             person: {},
             formAction: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdjqlBsYS1fm1fPim3-OTC7FC7IRyCIVBSY0I80QRcSu0F7SA/formResponse",
@@ -53,7 +54,8 @@
                 var n = this;
                 if (5 === t.length) if (void 0 === this.persons[this.id]) {
                     this.loading = !0;
-                    var i = this.gas + "?id=" + this.id; fetch(i, { method: "POST" })
+                    var i = this.gas + "?id=" + this.id;
+                    fetch(i, { method: "POST" })
                         .then((function (t) { return t.json() }))
                         .then((function (t) { n.persons[n.id] = t, n.person = t, n.loading = !1 }))
                 } else this.person = this.persons[this.id]
