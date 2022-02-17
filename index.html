@@ -49,7 +49,7 @@
       </div>
       <section class="kv w-640"><img src="https://picsum.photos/640/360" width="640" height="360" alt="主視覺"/></section>
       <section class="form w-640">
-        <div class="text-center">
+        <!--<div class="text-center">
           <h1>Google表單，輸入隊編後自動帶入其它欄位資料</h1>
           <p>筆記文：<a href="https://letswrite.tw/google-forms-id-data/" target="_blank">Let's Write</a></p>
         </div>
@@ -81,21 +81,21 @@
           </div>
           <div class="col">
             <div class="form-group">
-              <label form="carNum">車牌號碼</label>
+              <label for="carNum">車牌號碼</label>
               <input class="form-control" id="carNum" type="text" v-model="person.carNum" disabled="disabled"/>
             </div>
           </div>
         </div>
         <div class="form-group">
-          <label form="site">分隊小隊</label>
+          <label for="site">分隊小隊</label>
           <input class="form-control" id="site" type="text" v-model="person.site" disabled="disabled"/>
         </div>
         <div class="form-group">
-          <label form="carType">車款</label>
+          <label for="carType">車款</label>
           <input class="form-control" id="carType" type="text" v-model="person.carType" :disabled="disabled"/>
-        </div>
+        </div>-->
          <!-- <div class="form-group">
-          <label for="message">備註</label>
+          <label form="message">備註</label>
           <input class="form-control" id="message" type="text" v-model="person.message" :disabled="person.name == undefined"/>
         </div>-->
         <div class="submit"><a href="#" :class="{ disabled: person.name == undefined }" @click.prevent="submit">送出</a></div>
