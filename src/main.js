@@ -58,7 +58,7 @@
         watch: {
             id: function (t) {
                 var n = this;
-                if (5 === t.length) if (void 0 === this.persons[this.id]) {
+                if (5 === t.length || 4=== t.length) if (void 0 === this.persons[this.id]) {
                     this.loading = !0;
                     var i = this.gas + "?id=" + this.id;
                     fetch(i, { method: "POST" })
