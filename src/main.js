@@ -37,8 +37,7 @@
                         .concat(this.input.site, "=")
                         .concat(this.person.site, "&")
                         .concat(this.input.msg, "=")
-                    .concat(this.person.message || "無")
-                    ;
+                    .concat(this.person.message || "無");
                     fetch(this.formAction + "?" + n, { method: "POST" })
                         .catch((function (n) {
                             alert("提交成功。"),
