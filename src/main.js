@@ -12,10 +12,10 @@
             input: {
                 id: "entry.143599827",
                 name: "entry.34207673",
-                //gender: "entry.1813787574",
-                //phone: "entry.1164978269",
-                //site: "entry.335294457",
-                //msg: "entry.345524945"
+                gender: "entry.1813787574",
+                phone: "entry.1164978269",
+                site: "entry.335294457",
+                msg: "entry.345524945"
             }, loading: !1
         },
         methods: {
@@ -31,14 +31,14 @@
                         .concat(this.person.id, "&")
                         .concat(this.input.name, "=")
                         .concat(this.person.name, "&")
-                        //.concat(this.input.gender, "=")
-                        //.concat(this.person.gender, "&")
-                        //.concat(this.input.phone, "=")
-                        //.concat(this.person.phone, "&")
-                        //.concat(this.input.site, "=")
-                        //.concat(this.person.site, "&")
-                        //.concat(this.input.msg, "=")
-                    //.concat(this.person.message || "無")
+                        .concat(this.input.gender, "=")
+                        .concat(this.person.gender, "&")
+                        .concat(this.input.phone, "=")
+                        .concat(this.person.phone, "&")
+                        .concat(this.input.site, "=")
+                        .concat(this.person.site, "&")
+                        .concat(this.input.msg, "=")
+                    .concat(this.person.message || "無")
                     ;
                     fetch(this.formAction + "?" + n, { method: "POST" })
                         .catch((function (n) {
