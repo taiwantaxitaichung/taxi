@@ -53,13 +53,9 @@
                 var n = this;
                 if (5 === t.length) if (void 0 === this.persons[this.id]) {
                     this.loading = !0;
-                    var i = this.gas + "?id=" + this.id;
-                    fetch(i, { method: "POST" }).then((function (t) {
-                        return t.json()
-                    }))
-                        .then((function (t) {
-                            n.persons[n.id] = t, n.person = t, n.loading = !1
-                        }))
+                    var i = this.gas + "?id=" + this.id; fetch(i, { method: "POST" })
+                        .then((function (t) { return t.json() }))
+                        .then((function (t) { n.persons[n.id] = t, n.person = t, n.loading = !1 }))
                 } else this.person = this.persons[this.id]
             }
         }
