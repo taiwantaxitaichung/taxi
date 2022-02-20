@@ -2,4 +2,4 @@
 
 來源：[台灣大車隊](https://www.taiwantaxi.com.tw/)
 
-友善連結：[Let's Write](https://itaxi.iot.gov.tw/Tms/)
+友善連結：[通用計程車](https://itaxi.iot.gov.tw/Tms/)
